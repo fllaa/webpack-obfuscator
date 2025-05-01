@@ -40,9 +40,7 @@ export class WebpackObfuscatorPlugin {
             return;
         }
 
-        const pluginName = this.constructor.name;
-
-        compiler.hooks.emit.tap(pluginName, (compilation: compilation.Compilation) => {
+        compiler.plugin('emit', (compilation: compilation.Compilation) => {
             let identifiersPrefixCounter: number = 0;
             const sourcemapOutput: {[index:string]: string} = {};
 

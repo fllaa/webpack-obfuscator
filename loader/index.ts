@@ -69,7 +69,7 @@ class WebpackObfuscatorLoaderHelper {
                     continue;
                 }
 
-                throw new Error(error);
+                throw new Error(error as string);
             }
         }
 
