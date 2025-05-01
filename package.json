@@ -1,5 +1,5 @@
 {
-    "name": "webpack-obfuscator",
+    "name": "@flla/webpack-obfuscator",
     "version": "2.6.0-webpack.3",
     "description": "javascript-obfuscator plugin for Webpack",
     "keywords": [

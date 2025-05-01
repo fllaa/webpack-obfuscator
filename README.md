@@ -6,12 +6,12 @@
 
 Install the package with NPM and add it to your devDependencies:
 
-`npm install --save-dev webpack-obfuscator`
+`npm install --save-dev @flla/webpack-obfuscator`
 
 ### Plugin usage:
 
 ```javascript
-var WebpackObfuscator = require('webpack-obfuscator');
+var WebpackObfuscator = require('@flla/webpack-obfuscator');
 
 // ...
 
@@ -28,7 +28,7 @@ plugins: [
 Define a rule in your webpack config and use the obfuscator-loader as the last of your loaders for your modules. You can add the **enforce: 'post'** flag to ensure the loader will be called after normal loaders:
 
 ```javascript
-var WebpackObfuscator = require('webpack-obfuscator');
+var WebpackObfuscator = require('@flla/webpack-obfuscator');
 
 // webpack loader rules array
 rules: [
@@ -70,7 +70,7 @@ Example:
 // webpack.config.js
 'use strict';
 
-const JavaScriptObfuscator = require('webpack-obfuscator');
+const JavaScriptObfuscator = require('@flla/webpack-obfuscator');
 
 module.exports = {
     entry: {
